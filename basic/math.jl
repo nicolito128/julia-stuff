@@ -1,27 +1,37 @@
+"""
+    # Basic Math
+    - Ref: https://docs.julialang.org/en/v1/manual/mathematical-operations/
+"""
 
-# Comment
+x = 1
+y = 2
+z = 3
+s = 4
 
-#=
+# Unary operations
+# +1
++x
+# -1
+-x
 
-Multiline
-Comment
-
-=#
-
-1 + 2
-
-1 - 3
-
-4 % 2
-5 % 3
-
-4 * 3
-
-1 / 4
-15 / 2
-8 / 4
-
-2^7
+# Binary operations
+# Plus
+x + y
+# Minus
+x + y
+# Times
+s * z
+# Remainder
+s % y
+# Divide
+x / s
+# Inverse Divide
+x \ y == y / x
+# Integer Divide
+z ÷ s
+div(z, s)
+# Power
+y^s
 
 # Variables
 n = 10
