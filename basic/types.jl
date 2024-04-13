@@ -1,5 +1,5 @@
 """
-    # Data type
+    # Data Types
     - Ref: https://docs.julialang.org/en/v1/manual/types/
 """
 
