@@ -3,9 +3,16 @@
     all the letters in the alphabet using an integer key between 0 and 26. 
     Using a key of 0 or 26 will always yield the same output due to modular 
     arithmetic. The letter is shifted for as many values as the value of the key.
+
+    ...
+
+    El cifrado César es un cifrado por desplazamiento simple que se basa en trasponer 
+    todas las letras del alfabeto utilizando una clave entera entre 0 y 26. 
+    El uso de una clave de 0 o 26 siempre producirá el mismo resultado 
+    debido a la aritmética modular (un sistema que da vueltas sobre si mismo).
 =#
 
-function rotate(n, char::Char)::Char
+function rotate(n::Int, char::Char)::Char
     if n == 0 || n == 26
         return char
     end
@@ -13,7 +20,7 @@ function rotate(n, char::Char)::Char
     is_letter(char) ? mod_char26(char, n) : char
 end
 
-function rotate(n, str::String)::String
+function rotate(n::Int, str::String)::String
     if n == 0 || n == 26
         return str
     end
