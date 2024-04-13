@@ -6,7 +6,7 @@
 =#
 
 function rotate(n, char::Char)::Char
-    if n == 0
+    if n == 0 || n == 26
         return char
     end
     
@@ -14,7 +14,7 @@ function rotate(n, char::Char)::Char
 end
 
 function rotate(n, str::String)::String
-    if n == 0
+    if n == 0 || n == 26
         return str
     end
 
